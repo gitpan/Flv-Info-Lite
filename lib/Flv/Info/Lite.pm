@@ -9,7 +9,7 @@ require Exporter;
 our @ISA       = qw(Exporter);
 our @EXPORT_OK = qw( flv_info );
 our @EXPORT    = qw();
-our $VERSION   = '0.02';
+our $VERSION   = '0.03';
 
 sub flv_info {
     my %tag_type = (
@@ -296,10 +296,10 @@ Flv::Info::Lite - Another FLV information extract module
   print $info{'videocodecid'};
   print $info{'videodatarate'};
 
-	foreach (keys %info)
-	{
-		print "$_ => " . $info{$_} . "\n" if $_;
-	}
+  foreach (keys %info)
+  {
+    print "$_ => " . $info{$_} . "\n" if $_;
+  }
 
 =head1 DESCRIPTION
 
